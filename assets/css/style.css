@@ -8,9 +8,15 @@ body {
 }
 h1 {
     color: white;
-    font-family:'Times New Roman', Times, serif;
+    font-family:'times new roman', times, serif;
     font-size: 6rem;
     text-shadow: 1px 1px #aaa;
+}
+h3 {
+    color: white;
+    font-family:'times new roman', times, serif;
+    text-shadow: 1px 1px #aaa;
+    font-style: italic;
 }
 
 #container {

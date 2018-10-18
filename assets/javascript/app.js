@@ -108,10 +108,10 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
         errorFlag = false;
       }
     } else {
-      if(!errorFlag) {
-      var error = $("<div id = 'error'>Please enter a valid location</div>");
-      $("#route-entry").append(error);
-      errorFlag = true;
+      if (!errorFlag) {
+        var error = $("<div id = 'error'>Please enter a valid location</div>");
+        $("#route-entry").append(error);
+        errorFlag = true;
       }
     }
   });
@@ -281,29 +281,6 @@ function appendForecastToSummary(response) {
 }
 
 
-function windWatch(wind) {
-  if (wind > 1 && wind <= 10) {
-    // html turns green
-    $("#windWatch").css("background", "rgba(76, 175, 80, 0.6)")
-  };
-  if (wind > 10.1 && wind <= 20) {
-    // html turns yellow
-    $("#windWatch").css("background", "rgba(255,255,0, 0.5)")
-  }
-  if (wind > 20.1) {
-    // document.write("got it"), html turns red
-    $("#windWatch").css("background", "rgba(255, 0, 0, 0.6)")
-  };
-}
-
-function windWatch2(headWind) {
-  for (var i = 0; i < headWind.length; i++) {
-    if (headWind[i] > 12) {
-      var divOfInterest = document.getElementById("summary-panel").children[i];
-      $(divOfInterest).css("background", "rgba(255, 0, 0, 0.6)")
-    }
-  };
-}
 function clearSummaryPanel() {
   $("#summary-panel").empty();
 }
@@ -457,10 +434,6 @@ $(document).ready(function () {
     deleteMarkers(clickedMarkers);
   })
 
-  $("#windWatch").on("click", function (event) {
-    windWatch(wind[0]);
-    windWatch2(headWind);
-  });
 
   $("#accept-tip").on("click", function () {
     $("#tip").css("display", "none");
