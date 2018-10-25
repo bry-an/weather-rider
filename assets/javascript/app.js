@@ -267,7 +267,7 @@ function appendForecastToSummary(response) {
   var temp = forecast.main.temp;
   var windSpeed = forecast.wind.speed;
   var windDir = forecast.wind.deg;
-  var icon = "<img src = 'http://openweathermap.org/img/w/" + forecast.weather.icon + ".png'/>";
+  var icon = "<img src = 'http://openweathermap.org/img/w/" + forecast.weather[0].icon + ".png'/>";
   var panelDiv = $("#summary-panel");
   var headwindComponent = calculateHeadwindComponent(windSpeed, windDir, heading);
   var item = $("<div class = 'summary-item'>");
