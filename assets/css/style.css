@@ -72,9 +72,8 @@ label, #point-options {
     z-index: 5;
 }
 #clearMarkersBtn {
-    position: relative;
-    bottom: 5px;
-    float: right;
+margin-top: 15px;
+margin-left: 10px;
 }
 
 #floating-panel {
@@ -257,7 +256,7 @@ img {
     font-size: 16px;
 }
 
-.btn {
+btn {
     background-color: #2dada0;
     margin-bottom: 5px;
 }
