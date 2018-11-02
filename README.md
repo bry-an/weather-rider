@@ -1,3 +1,5 @@
+![weather-rider-demo](weather-rider-demo.gif)
+
 # Weather Rider
 This app allows users to plot a bike route using the Google Maps API, and have an arbitrary number (up to 12) of waypoints along the route  display weather information at each location. For bikers who've had the experience of weather changes mid-ride, or simply enjoy detailed and hyperlocal weather information, this app is for you. 
 
